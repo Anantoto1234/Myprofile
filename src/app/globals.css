@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --background-1: #ffeed9;
+  --background-2: #FAF4E7;
+  --background-dark: #2b1f17;
+  --card-bg: #fff8f2;
+  --card-bg-dark: #3a2a1f;
+  --text: #fefae0;
+  --foreground: #2b1f17;
+  --btn-disabled: #ccc;
+  /* hoặc màu bạn mong muốn */
+
+  --btn-text: #000;
+  --btn-border: #4d5566;
+  --btn-hover-bg: #000;
+  --btn-hover-text: #fff;
+
+  --accent: #e26a2c;
+  --accent-foreground: #fff;
+
+  --cursor-border: #f39c12;
+  --cursor-shadow: rgba(243, 156, 18, 0.6);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+.dark {
+  --background-1: #2b1f17;
+  --background-2: #372112;
+  --foreground: #fefae0;
+  --background-dark: #2b1f17;
+  --btn-disabled: #555;
+  --text: #fefae0;
+  --card-bg: #3a2a1f;
+  --card-bg-dark: #3a2a1f;
+  --btn-text: #fefae0;
+  --btn-border: #fefae0;
+  --btn-hover-bg: #fefae0;
+  --btn-hover-text: #2b1f17;
+
+  --accent: #f39c12;
+  --accent-foreground: #0a0a0a;
+
+  --cursor-border: #f39c12;
+  --cursor-shadow: rgba(243, 156, 18, 0.8);
+}
+
+@layer base {
+  body {
+    color: var(--foreground);
+    font-family: var(--font-sans), sans-serif;
+  }
+}
+
+@layer utilities {
+  .text {
+    color: var(--text);
+  }
+}
+
+/* Custom cursor */
+.custom-cursor {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--cursor-border);
+  background-color: transparent;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px var(--cursor-shadow);
+  transition:
+    transform 0.1s ease-out,
+    width 0.3s ease,
+    height 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.custom-cursor.is-hover {
+  border-color: #e74c3c;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 0 15px rgba(231, 76, 60, 0.8);
+}
