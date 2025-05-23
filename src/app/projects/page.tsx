@@ -286,7 +286,6 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                     </Badge>
                 </div>
             </div>
-
             {/* Nội dung */}
             <div className="p-6 flex-grow flex flex-col">
                 <div className="flex-grow">
@@ -358,7 +357,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                                 href={project.githubUrl}
                                 target="_blank"
                                 className="flex-1"
-                            >
+                                 >
                                 <button className="w-full rounded-lg bg-black text-[#faf4e6] px-4 py-2 text-sm flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors">
                                     <Github className="h-4 w-4" />
                                     Mã nguồn
@@ -368,11 +367,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                     ) : null}
 
                     {project.liveUrl && (
-                        <Link
-                            href={project.liveUrl}
-                            target="_blank"
-                            className="flex-1"
-                        >
+                        <Link href={project.liveUrl} target="_blank" className="flex-1"  >
                             <button className="w-full rounded-lg border bg-rose-600 text-white border-black/20 px-4 py-2 text-sm flex items-center justify-center gap-2  transition-colors">
                                 <ExternalLink className="h-4 w-4" />
                                 Xem thử
@@ -382,5 +377,5 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 </div>
             </div>
         </motion.div>
-    )
+    );
 }

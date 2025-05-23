@@ -131,7 +131,7 @@ I’m eager to keep learning and currently looking for an internship in Business
                             className="flex flex-col sm:flex-row sm:gap-4 gap-3 w-full items-center md:items-start"
                             style={{ fontFamily: 'Eczar, sans-serif' }}
                         >
-                            <Link
+                            <a
                                 href="/images/Cvproflie_Luuthitoan.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -139,14 +139,13 @@ I’m eager to keep learning and currently looking for an internship in Business
                                 style={{
                                     backgroundColor: "#4e5e80",
                                     fontFamily: 'Work Sans, sans-serif',
-                                }}
-                            >
+                                }}>
                                 <span className="relative z-10">Xem CV</span>
                                 <ArrowRight
                                     className="ml-2 h-4 w-4 relative z-10 text-[#4e5e80] rounded-sm font-bold"
                                     style={{ backgroundColor: "#ffffff" }}
                                 />
-                            </Link>
+                            </a>
 
                             <button
                                 onClick={() => scrollToSection('about')}
@@ -183,7 +182,6 @@ I’m eager to keep learning and currently looking for an internship in Business
                     </motion.div>
                 </div>
             </div>
-
             <style jsx>{`
                 @keyframes blink {
                     0%, 100% { opacity: 1 }

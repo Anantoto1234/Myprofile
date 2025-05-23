@@ -45,7 +45,6 @@ const RecentWork = () => {
           />
         </div>
       )}
-
       <div className="container mx-auto px-4 sm:px-6 max-w-6xl relative">
         <motion.div
            className="mb-14 md:mb-20 section-title flex justify-center"
