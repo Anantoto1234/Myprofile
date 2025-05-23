@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import type React from "react"
 import { useState } from "react"
@@ -54,30 +54,30 @@ export default function ContactPage() {
             title: "Email",
             content: "anantoto1234@gmail.com",
             link: "mailto:anantoto1234@gmail.com",
-            linkText: "Gửi email cho tôi",
+            linkText: "Send me an email",
         },
         {
             icon: <Phone className="w-5 h-5 text-rose-500" />,
-            title: "Điện thoại",
+            title: "Phone",
             content: "+84 379373619",
             link: "tel:+84379373619",
-            linkText: "Gọi cho tôi",
+            linkText: "Call me",
         },
         {
             icon: <MapPin className="w-5 h-5 text-rose-500" />,
-            title: "Địa chỉ",
-            content: "Đà Nẵng, Việt Nam",
+            title: "Address",
+            content: "Da Nang, Vietnam",
             link: "",
-            linkText: "Đang sống và học tập tại đây",
+            linkText: "Currently living and studying here",
         },
     ]
 
     return (
-        <main className="mx-auto container max-w-7xl px-4 md:px-8 lg:px-12 ">
+        <main className="mx-auto container max-w-7xl px-4 md:px-8 lg:px-12">
             <div className="container mx-auto px-4 py-16 max-w-6xl">
                 <SectionHeading
-                    title="Liên Hệ Với Tôi"
-                    subtitle="Bạn có dự án cần hợp tác hoặc muốn trao đổi? Hãy gửi tin nhắn và tôi sẽ phản hồi trong vòng 24 giờ."
+                    title="Get In Touch"
+                    subtitle="Have a project in mind or want to connect? Send me a message and I’ll get back to you within 24 hours."
                     centered
                 />
 
@@ -113,21 +113,19 @@ export default function ContactPage() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                     <div className="space-y-6">
-                        <h2 className="text-3xl font-medium ">
-                            Thông tin liên hệ trực tiếp
-                        </h2>
-                        <p className="">
-                            Hiện tôi đang nhận các dự án freelance và cơ hội hợp tác. Dù bạn có ý tưởng dự án
-                            hay chỉ đơn giản muốn chào hỏi, tôi rất mong được nghe từ bạn.
+                        <h2 className="text-3xl font-medium">Direct Contact Information</h2>
+                        <p>
+                            I'm currently a third-year Software Engineering student looking for internship opportunities to gain real-world experience, improve my skills, and contribute to practical projects.
+                            If you have a suitable position or would like to connect and discuss further, I'd love to hear from you.
                         </p>
 
                         <div className="space-y-4">
                             <div className="flex items-start space-x-4">
                                 <div className="p-2 rounded-full mt-1">
-                                    <Mail className="w-4 h-4 " />
+                                    <Mail className="w-4 h-4" />
                                 </div>
                                 <div>
-                                    <h4 className="font-medium ">Email</h4>
+                                    <h4 className="font-medium">Email</h4>
                                     <a
                                         href="mailto:anantoto1234@gmail.com"
                                         className="hover:underline hover:text-rose-600"
@@ -142,7 +140,7 @@ export default function ContactPage() {
                                     <Phone className="w-4 h-4" />
                                 </div>
                                 <div>
-                                    <h4 className="font-medium">Điện thoại</h4>
+                                    <h4 className="font-medium">Phone</h4>
                                     <a
                                         href="tel:+84379373619"
                                         className="hover:underline hover:text-rose-600"
@@ -154,14 +152,12 @@ export default function ContactPage() {
                         </div>
                     </div>
 
-                    <AnimatedCard className="p-8 rounded-xl  border-2 border-rose-100">
-                        <h2 className="text-2xl font-medium mb-6">
-                            Gửi tin nhắn
-                        </h2>
+                    <AnimatedCard className="p-8 rounded-xl border-2 border-rose-100">
+                        <h2 className="text-2xl font-medium mb-6">Send a Message</h2>
 
                         {isSubmitted && (
                             <div className="bg-rose-50 border border-rose-200 p-4 rounded-lg mb-6 text-sm">
-                                Cảm ơn bạn đã liên hệ! Tôi sẽ phản hồi lại trong vòng 24 giờ.
+                                Thank you for reaching out! I’ll get back to you within 24 hours.
                             </div>
                         )}
 
@@ -169,7 +165,7 @@ export default function ContactPage() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium mb-1">
-                                        Họ và tên
+                                        Full Name
                                     </label>
                                     <input
                                         type="text"
@@ -179,12 +175,12 @@ export default function ContactPage() {
                                         onChange={handleChange}
                                         required
                                         className="w-full px-4 py-2 text-sm border border-rose-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-300 focus:border-rose-300 transition-all bg-white text-rose-900 placeholder-rose-300"
-                                        placeholder="Nhập họ tên của bạn"
+                                        placeholder="Enter your full name"
                                     />
                                 </div>
 
                                 <div>
-                                    <label htmlFor="email" className="block text-sm font-medium mb-1 ">
+                                    <label htmlFor="email" className="block text-sm font-medium mb-1">
                                         Email
                                     </label>
                                     <input
@@ -195,14 +191,14 @@ export default function ContactPage() {
                                         onChange={handleChange}
                                         required
                                         className="w-full px-4 py-2 text-sm border border-rose-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-300 focus:border-rose-300 transition-all bg-white text-rose-900 placeholder-rose-300"
-                                        placeholder="email@cuaban.com"
+                                        placeholder="your@email.com"
                                     />
                                 </div>
                             </div>
 
                             <div>
                                 <label htmlFor="subject" className="block text-sm font-medium mb-1">
-                                    Chủ đề
+                                    Subject
                                 </label>
                                 <select
                                     id="subject"
@@ -212,18 +208,18 @@ export default function ContactPage() {
                                     required
                                     className="w-full px-4 py-2 text-sm border border-rose-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-300 focus:border-rose-300 transition-all bg-white text-rose-900"
                                 >
-                                    <option value="" className="text-rose-300">Bạn muốn liên hệ về vấn đề gì?</option>
-                                    <option value="Project Inquiry">Tư vấn dự án</option>
-                                    <option value="Collaboration">Hợp tác</option>
-                                    <option value="Job Opportunity">Cơ hội việc làm</option>
-                                    <option value="General Question">Câu hỏi chung</option>
-                                    <option value="Other">Khác</option>
+                                    <option value="" className="text-rose-300">What would you like to discuss?</option>
+                                    <option value="Project Inquiry">Project Inquiry</option>
+                                    <option value="Collaboration">Collaboration</option>
+                                    <option value="Job Opportunity">Job Opportunity</option>
+                                    <option value="General Question">General Question</option>
+                                    <option value="Other">Other</option>
                                 </select>
                             </div>
 
                             <div>
                                 <label htmlFor="message" className="block text-sm font-medium mb-1">
-                                    Nội dung
+                                    Message
                                 </label>
                                 <textarea
                                     id="message"
@@ -233,14 +229,15 @@ export default function ContactPage() {
                                     required
                                     rows={5}
                                     className="w-full px-4 py-2 text-sm border border-rose-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-300 focus:border-rose-300 transition-all bg-white text-rose-900 placeholder-rose-300"
-                                    placeholder="Hãy chia sẻ về dự án của bạn..."
+                                    placeholder="Share your idea, question, or opportunity..."
                                 ></textarea>
                             </div>
 
                             <button
                                 type="submit"
-                                className={`w-full px-6 py-3 rounded-xl transition-all font-medium text-sm bg-gradient-to-r from-rose-400 to-red-500 text-white hover:from-rose-500 hover:to-rose-600 shadow-sm hover:shadow-md ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""
-                                    }`}
+                                className={`w-full px-6 py-3 rounded-xl transition-all font-medium text-sm bg-gradient-to-r from-rose-400 to-red-500 text-white hover:from-rose-500 hover:to-rose-600 shadow-sm hover:shadow-md ${
+                                    isSubmitting ? "opacity-70 cursor-not-allowed" : ""
+                                }`}
                                 disabled={isSubmitting}
                             >
                                 {isSubmitting ? (
@@ -265,10 +262,10 @@ export default function ContactPage() {
                                                 d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                                             ></path>
                                         </svg>
-                                        Đang gửi...
+                                        Sending...
                                     </span>
                                 ) : (
-                                    "Gửi tin nhắn"
+                                    "Send Message"
                                 )}
                             </button>
                         </form>

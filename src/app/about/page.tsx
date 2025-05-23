@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { motion } from "framer-motion"
 import Image from "next/image"
@@ -13,26 +13,23 @@ type Tech = {
 export default function AboutPage() {
     return (
         <div className="mx-auto container max-w-7xl px-4 md:px-8 lg:px-12 py-12 md:py-20">
-            {/* Giới thiệu bản thân */}
+            {/* Introduction */}
             <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className="max-w-4xl mx-auto mb-16 text-center"
                 style={{ fontFamily: 'Eczar, sans-serif', color: 'var(--text-card)' }}
-
             >
-                <h1
-                    className="text-4xl md:text-5xl font-bold mb-4"
-                >
-                    Giới thiệu bản thân
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                    About Me
                 </h1>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Lập trình viên Full-stack
+                    3rd-year Software Engineering Student – VKU University
                 </p>
             </motion.section>
 
-            {/* Thông tin cá nhân */}
+            {/* Personal Info */}
             <section className="grid md:grid-cols-2 gap-12 items-center mb-24">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
@@ -45,7 +42,7 @@ export default function AboutPage() {
                         <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-lg" />
                         <Image
                             src="/images/7658.jpg"
-                            alt="Tố An"
+                            alt="To An"
                             width={400}
                             height={400}
                             className="rounded-lg relative z-10 object-cover w-full h-full"
@@ -59,45 +56,44 @@ export default function AboutPage() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    <h2 className="text-2xl font-bold mb-6" style={{ fontFamily: 'Eczar, sans-serif', color: 'var(--text-card)' }}
-                    >Tôi là ai?</h2>
-
+                    <h2 className="text-2xl font-bold mb-6" style={{ fontFamily: 'Eczar, sans-serif', color: 'var(--text-card)' }}>
+                        Who am I?
+                    </h2>
                     <div className="space-y-4 mb-8 text-muted-foreground">
                         <p>
-                            Mình là sinh viên ngành Kỹ thuật phần mềm, luôn khao khát học hỏi và khám phá công nghệ mới. Mình không ngừng cải thiện kỹ năng lập trình của bản thân.
+                            I'm currently a 3rd-year Software Engineering student at VKU. With a strong desire to learn and grow, I'm preparing myself for internships and future professional environments.
                         </p>
                         <p>
-                            Mình tập trung chủ yếu vào Spring và NextJS, đặc biệt chú trọng đến hiệu suất, trải nghiệm người dùng và giao diện đẹp mắt.
+                            I enjoy building web and application projects. I focus on clean UI, good user experience, and optimizing performance.
                         </p>
                         <p>
-                            Mình thích khám phá tri thức công nghệ và phát triển các ứng dụng hữu ích. Ngoài thời gian học, mình thường xem video lập trình, luyện thuật toán trên LeetCode để rèn tư duy logic. Mình cũng yêu thích nghe nhạc, đi cà phê với bạn bè và chơi game giải trí.
+                            Besides academics, I'm actively preparing for the TOEIC exam to improve my English communication skills. I used to serve as class monitor, and now I'm the secretary of class 22SE2, actively involved in student activities and leadership.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-6" >
+                    <div className="grid grid-cols-2 gap-6">
                         <div className="bg-card p-4 rounded-lg border">
-                            <h4 className="font-bold mb-2 text-sm uppercase tracking-wider text-muted-foreground">Nơi ở</h4>
-                            <p className="font-medium">Đà Nẵng, Việt Nam</p>
+                            <h4 className="font-bold mb-2 text-sm uppercase tracking-wider text-muted-foreground">Location</h4>
+                            <p className="font-medium">Da Nang, Vietnam</p>
                         </div>
                         <div className="bg-card p-4 rounded-lg border">
-                            <h4 className="font-bold mb-2 text-sm uppercase tracking-wider text-muted-foreground">Học vấn</h4>
-                            <p className="font-medium">Đại học VKU</p>
+                            <h4 className="font-bold mb-2 text-sm uppercase tracking-wider text-muted-foreground">Education</h4>
+                            <p className="font-medium">VKU University</p>
                             <p className="text-sm text-muted-foreground">2022 - 2026</p>
                         </div>
                     </div>
                 </motion.div>
             </section>
 
-            {/* Học vấn */}
+            {/* Education */}
             <section className="mb-24">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                    <div className="max-w-2xl mx-auto text-center mb-12" style={{ fontFamily: 'Eczar, sans-serif', color: 'var(--text-card)' }}
-                    >
-                        <h2 className="text-3xl font-bold mb-4">Học vấn</h2>
+                    <div className="max-w-2xl mx-auto text-center mb-12" style={{ fontFamily: 'Eczar, sans-serif', color: 'var(--text-card)' }}>
+                        <h2 className="text-3xl font-bold mb-4">Education</h2>
                         <div className="w-20 h-1 bg-primary mx-auto" />
                     </div>
 
@@ -110,30 +106,29 @@ export default function AboutPage() {
                         >
                             <div className="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-primary" />
                             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
-                                <h3 className="font-bold text-lg">Cử nhân Công nghệ Thông tin</h3>
+                                <h3 className="font-bold text-lg">Bachelor of Software Engineering</h3>
                                 <span className="text-sm bg-primary/10 text-primary px-3 py-1 rounded-full">2022 - 2026</span>
                             </div>
                             <p className="font-medium text-muted-foreground mb-3">
-                                Trường Đại học Việt - Hàn (VKU)
+                                Vietnam–Korea University of Information and Communication Technology (VKU)
                             </p>
                             <p className="text-muted-foreground">
-                                Được đào tạo bài bản về phát triển phần mềm, trí tuệ nhân tạo và ứng dụng di động. Tích cực tham gia các sự kiện công nghệ và dự án nhóm tại trường.
+                                Gaining hands-on experience and knowledge in software development, systems design, web and mobile applications, and AI fundamentals. Also engaged in group projects and technology clubs.
                             </p>
                         </motion.div>
                     </div>
                 </motion.div>
             </section>
 
-            {/* Công nghệ sử dụng */}
+            {/* Tech Stack */}
             <section className="mb-24">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
                 >
-                    <div className="max-w-2xl mx-auto text-center mb-12" style={{ fontFamily: 'Eczar, sans-serif', color: 'var(--text-card)' }}
-                    >
-                        <h2 className="text-3xl font-bold mb-4">Công nghệ sử dụng</h2>
+                    <div className="max-w-2xl mx-auto text-center mb-12" style={{ fontFamily: 'Eczar, sans-serif', color: 'var(--text-card)' }}>
+                        <h2 className="text-3xl font-bold mb-4">Tech Stack</h2>
                         <div className="w-20 h-1 bg-primary mx-auto" />
                     </div>
 
@@ -146,68 +141,53 @@ export default function AboutPage() {
                                 <MonitorSmartphone className="h-5 w-5" /> Frontend
                             </TabsTrigger>
                             <TabsTrigger value="tools" className="text-lg flex items-center gap-2">
-                                <Wrench className="h-5 w-5" /> Công cụ
+                                <Wrench className="h-5 w-5" /> Tools
                             </TabsTrigger>
                         </TabsList>
 
-                        {/* Backend */}
                         <TabsContent value="backend" className="mt-6">
-                            <TechGrid
-                                list={[
-                                    { name: "Python", icon: "https://cdn.simpleicons.org/python" },
-                                    { name: "Spring Framework", icon: "https://cdn.simpleicons.org/spring" },
-                                    { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql" },
-                                    { name: "PostgreSQL", icon: "https://cdn.simpleicons.org/postgresql" },
-                                    { name: "MongoDB", icon: "https://cdn.simpleicons.org/mongodb" },
-                                    { name: "Docker", icon: "https://cdn.simpleicons.org/docker" },
-                                    { name: "Postman", icon: "https://cdn.simpleicons.org/postman" },
-                                    { name: "Java", icon: "/images/java3.webp" },
-
-                                ]}
-                            />
+                            <TechGrid list={[
+                                { name: "Java", icon: "/images/java3.webp" },
+                                { name: "Spring Boot", icon: "https://cdn.simpleicons.org/spring" },
+                                { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql" },
+                                { name: "PostgreSQL", icon: "https://cdn.simpleicons.org/postgresql" },
+                                { name: "MongoDB", icon: "https://cdn.simpleicons.org/mongodb" },
+                                { name: "Docker", icon: "https://cdn.simpleicons.org/docker" },
+                                { name: "Postman", icon: "https://cdn.simpleicons.org/postman" },
+                            ]} />
                         </TabsContent>
 
-                        {/* Frontend */}
                         <TabsContent value="frontend" className="mt-6">
-                            <TechGrid
-                                list={[
-                                    { name: "Next.js", icon: "https://cdn.simpleicons.org/nextdotjs/ffffff" },
-                                    { name: "Tailwind CSS", icon: "https://cdn.simpleicons.org/tailwindcss" },
-                                    { name: "TypeScript", icon: "https://cdn.simpleicons.org/typescript" },
-                                    { name: "HTML/CSS", icon: "https://cdn.simpleicons.org/html5" },
-                                    { name: "React", icon: "https://cdn.simpleicons.org/react" },
-                                ]}
-                            />
+                            <TechGrid list={[
+                                { name: "Next.js", icon: "https://cdn.simpleicons.org/nextdotjs/ffffff" },
+                                { name: "Tailwind CSS", icon: "https://cdn.simpleicons.org/tailwindcss" },
+                                { name: "TypeScript", icon: "https://cdn.simpleicons.org/typescript" },
+                                { name: "React", icon: "https://cdn.simpleicons.org/react" },
+                                { name: "HTML/CSS", icon: "https://cdn.simpleicons.org/html5" },
+                            ]} />
                         </TabsContent>
 
-                        {/* Tools */}
                         <TabsContent value="tools" className="mt-6">
-                            <TechGrid
-                                list={[
-                                    { name: "Git", icon: "https://cdn.simpleicons.org/git" },
-                                    { name: "JetBrains IDEs", icon: "https://cdn.simpleicons.org/jetbrains/ffffff" },
-                                    { name: "Scrum", icon: "https://cdn.simpleicons.org/scrumalliance" },
-                                    { name: "Agile", icon: "/icons/agile.png" },
-                                    { name: "VS Code", icon: "/icons/vscode.png" },
-                                    { name: "Jira", icon: "https://cdn.simpleicons.org/jira" },
-                                    { name: "Figma", icon: "https://cdn.simpleicons.org/figma" },
-                                ]}
-                            />
+                            <TechGrid list={[
+                                { name: "Git", icon: "https://cdn.simpleicons.org/git" },
+                                { name: "VS Code", icon: "/icons/vscode.png" },
+                                { name: "Jira", icon: "https://cdn.simpleicons.org/jira" },
+                                { name: "Figma", icon: "https://cdn.simpleicons.org/figma" },
+                            ]} />
                         </TabsContent>
                     </Tabs>
                 </motion.div>
             </section>
 
-            {/* Thành tựu */}
+            {/* Achievements */}
             <section>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.6 }}
                 >
-                    <div className="max-w-2xl mx-auto text-center mb-12" style={{ fontFamily: 'Eczar, sans-serif', color: 'var(--text-card)' }}
-                    >
-                        <h2 className="text-3xl font-bold mb-4">Thành tựu</h2>
+                    <div className="max-w-2xl mx-auto text-center mb-12" style={{ fontFamily: 'Eczar, sans-serif', color: 'var(--text-card)' }}>
+                        <h2 className="text-3xl font-bold mb-4">Achievements</h2>
                         <div className="w-20 h-1 bg-primary mx-auto" />
                     </div>
 
@@ -266,18 +246,23 @@ function TechGrid({ list }: { list: Tech[] }) {
 
 const achievements = [
     {
-        title: "Sinh viên xuất sắc năm 2023",
-        description: "Được trao tặng vì thành tích học tập và hoạt động ngoại khóa nổi bật.",
-        date: "Tháng 12 năm 2023"
+        title: "Secretary of Class 22SE2",
+        description: "Organized class activities and helped promote student engagement and participation.",
+        date: "Since 2023"
     },
     {
-        title: "Quán quân Hackathon 2022",
-        description: "Đoạt giải nhất cuộc thi hackathon cấp quốc gia với sản phẩm sáng tạo.",
-        date: "Tháng 6 năm 2022"
+        title: "Class Monitor in First Year",
+        description: "Supported classroom management and coordination between lecturers and students.",
+        date: "2022 - 2023"
     },
     {
-        title: "Top 10 LeetCode toàn cầu",
-        description: "Nằm trong top 10 bảng xếp hạng toàn cầu về giải thuật.",
-        date: "Tháng 1 năm 2024"
+        title: "Achieved Excellent Academic Performance",
+        description: "Recognized as an excellent student for the latest academic semester.",
+        date: "Semester I, Academic Year 2024"
+    },
+    {
+        title: "Preparing for TOEIC",
+        description: "Self-studying to improve English communication and prepare for internship and job opportunities.",
+        date: "Ongoing"
     }
 ]

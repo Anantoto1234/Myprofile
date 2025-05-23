@@ -1,10 +1,11 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { motion, useInView, useReducedMotion } from 'framer-motion';
 import Image from 'next/image';
-import { works } from '@/data/works';
 import Link from 'next/link';
+import { gsap } from 'gsap';
+import { works } from '@/data/works';
 
 const fadeInUp = (isMobile: boolean) => ({
   hidden: { opacity: 0, y: isMobile ? 20 : 40 },
@@ -12,7 +13,10 @@ const fadeInUp = (isMobile: boolean) => ({
 });
 
 const fadeSide = (direction: 'left' | 'right', isMobile: boolean) => ({
-  hidden: { opacity: 0, x: direction === 'left' ? (isMobile ? -20 : -60) : (isMobile ? 20 : 60) },
+  hidden: {
+    opacity: 0,
+    x: direction === 'left' ? (isMobile ? -20 : -60) : (isMobile ? 20 : 60),
+  },
   visible: { opacity: 1, x: 0 },
 });
 
@@ -22,11 +26,79 @@ const RecentWork = () => {
   const reduceMotion = useReducedMotion();
   const isMobile = typeof window !== 'undefined' ? window.innerWidth <= 768 : false;
 
+  useEffect(() => {
+    if (!sectionRef.current) return;
+    const q = gsap.utils.selector(sectionRef);
+
+    const imgTl = gsap.timeline({ repeat: -1 });
+    imgTl
+      .to(q('.image-animation'), {
+        y: '-=30',
+        x: '+=20',
+        rotation: '-=2',
+        duration: 3,
+        ease: 'power1.inOut',
+      })
+      .to(q('.image-animation'), {
+        y: '+=30',
+        x: '-=20',
+        rotation: '-=2',
+        duration: 2,
+        ease: 'power1.inOut',
+      })
+      .to(q('.image-animation'), {
+        y: '-=20',
+        rotation: '+=2',
+        duration: 3,
+        ease: 'power1.inOut',
+      })
+      .to(q('.image-animation'), {
+        y: '+=20',
+        rotation: '+=2',
+        duration: 3,
+        ease: 'power1.inOut',
+      });
+
+    const laptopTl = gsap.timeline({ repeat: -1 });
+    laptopTl
+      .to(q('.laptop'), {
+        y: '-=10',
+        x: '+=10',
+        rotation: '-=1',
+        duration: 3,
+        ease: 'power1.inOut',
+      })
+      .to(q('.laptop'), {
+        y: '+=10',
+        x: '-=10',
+        rotation: '-=1',
+        duration: 2,
+        ease: 'power1.inOut',
+      })
+      .to(q('.laptop'), {
+        y: '-=10',
+        rotation: '+=1',
+        duration: 3,
+        ease: 'power1.inOut',
+      })
+      .to(q('.laptop'), {
+        y: '+=10',
+        rotation: '+=1',
+        duration: 3,
+        ease: 'power1.inOut',
+      });
+
+    return () => {
+      imgTl.kill();
+      laptopTl.kill();
+    };
+  }, []);
+
   return (
     <section
       ref={sectionRef}
-      className="py-16 md:py-24 relative overflow-hidden"
       id="projects"
+      className="py-16 md:py-24 relative overflow-hidden"
       style={{ backgroundColor: 'var(--background-1)', color: 'var(--foreground)' }}
     >
       {!isMobile && !reduceMotion && (
@@ -47,18 +119,17 @@ const RecentWork = () => {
       )}
       <div className="container mx-auto px-4 sm:px-6 max-w-6xl relative">
         <motion.div
-           className="mb-14 md:mb-20 section-title flex justify-center"
-           style={{ fontFamily: 'Eczar, sans-serif' }}
-           variants={fadeInUp(isMobile)}
-           initial="hidden"
-           animate={isInView ? 'visible' : 'hidden'}
-           transition={{ duration: isMobile ? 0.5 : 0.8 }}
-              >
-            <span className="inline-block text-3xl md:text-5xl font-bold text-center">
-         🔍 What I’m passionate about
-           </span>
-       </motion.div>
-
+          className="mb-14 md:mb-20 section-title flex justify-center"
+          style={{ fontFamily: 'Eczar, sans-serif' }}
+          variants={fadeInUp(isMobile)}
+          initial="hidden"
+          animate={isInView ? 'visible' : 'hidden'}
+          transition={{ duration: isMobile ? 0.5 : 0.8 }}
+        >
+          <span className="inline-block text-3xl md:text-5xl font-bold text-center">
+            🔍 What I’m passionate about
+          </span>
+        </motion.div>
 
         <div className="grid gap-12 md:gap-16">
           {works.map((work, index) => {
@@ -81,20 +152,15 @@ const RecentWork = () => {
                       {work.title}
                     </h3>
                     <div className="space-y-2 text-sm sm:text-base mb-4 md:mb-8 leading-relaxed" style={{ fontFamily: 'Work Sans, sans-serif', color: 'var(--text-card)' }}>
-                      {Array.isArray(work.description) ? (
-                        work.description.map((line, i) => {
-                        const isHighlight = line.includes(':') || line.includes('–');
+                      {Array.isArray(work.description) ? work.description.map((line, i) => {
                         const [boldText, ...rest] = line.split(/:|–/);
                         if (rest.length === 0) return <p key={i}>{line}</p>;
                         return (
                           <p key={i}>
-                            <strong>{boldText.trim()}:</strong>{' '}{rest.join('–').trim()}
+                            <strong>{boldText.trim()}:</strong> {rest.join('–').trim()}
                           </p>
                         );
-                      })
-                      ) : (
-                        <p>{work.description}</p>
-                      )}
+                      }) : <p>{work.description}</p>}
                     </div>
                     <div className="mt-auto">
                       <Link
@@ -106,16 +172,29 @@ const RecentWork = () => {
                       </Link>
                     </div>
                   </div>
+
                   <div className={`relative md:w-1/2 h-48 sm:h-64 md:h-auto ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'} rounded-lg md:rounded-xl overflow-hidden`}>
-                    <div className="absolute inset-0 bg-white bg-opacity-60 dark:bg-opacity-40 pointer-events-none rounded-lg md:rounded-xl" />
-                    <Image
-                      src={work.image}
-                      alt={work.title}
-                      fill
-                      className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105 rounded-lg md:rounded-xl"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-                      priority={index === 0}
-                    />
+                    {work.slug === 'internship-interests' ? (
+                      <div className="image-animation z-10 select-none mt-0 xs:mt-6 sm:mt-14 lg:mt-0 px-0 mx-auto lg:p-0 lg:basis-1/3">
+                        <div className="relative w-72 md:w-80 h-80 flex items-center mx-auto">
+                          <div className="absolute pointer-events-none scale-90 xs:scale-95 mx-auto">
+                            <Image src="/images/Anna.png" width={1177} height={1374} priority alt="Character Illustration" />
+                          </div>
+                          <div className="laptop absolute top-14 sm:top-16 left-0 scale-[.41] xs:scale-[.45] pointer-events-none">
+                            <Image src="/images/laptop.png" width={559} height={386} alt="Laptop illustration" />
+                          </div>
+                        </div>
+                      </div>
+                    ) : (
+                      <Image
+                        src={work.image}
+                        alt={work.title}
+                        fill
+                        className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105 rounded-lg md:rounded-xl"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                        priority={index === 0}
+                      />
+                    )}
                   </div>
                 </div>
               </motion.div>

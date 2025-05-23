@@ -23,28 +23,14 @@ export const works = [
       "Toolset: Git, Postman, Figma, Trello, VSCode.",
       "Research: ViT5 NLP, NSGA-II, LaTeX, and academic writing."
     ],
-    image: "/images/an1.png",
+    image: "/images/projects/backend.png",
     link: "#",
     tags: ["Skills", "Tools", "Tech Stack"],
     year: "2024",
     caseStudy: "Skills gained from fullstack development, team collaboration, and research.",
     featured: true
   },
-  {
-    title: "📄 Research Experience",
-    slug: "research-experience",
-    description: [
-      "Co-authored a paper on optimizing timetables using ViT5 NLP and NSGA-II algorithms.",
-      "Worked on model design, prompt tuning, and evaluation.",
-      "Paper under review (2024), exploring educational applications of AI."
-    ],
-    image: "/images/projects/edu.png",
-    link: "#",
-    tags: ["Research", "AI", "ViT5", "NSGA-II"],
-    year: "2024",
-    caseStudy: "Blending AI techniques with real-world scheduling challenges.",
-    featured: true
-  },
+
   {
     title: "🎯 Internship Goal",
     slug: "internship-goal",
@@ -55,7 +41,7 @@ export const works = [
       "Grow in teamwork and communication.",
       "Interested roles: Business Analyst, Tester, Frontend Developer."
     ],
-    image: "/images/an2.png",
+    image: "/images/projects/goalintern1.png",
     link: "#",
     tags: ["Internship", "Career Goal"],
     year: "2024",
@@ -66,11 +52,13 @@ export const works = [
     title: "✨ A Few Fun Facts",
     slug: "fun-facts",
     description: [
-      "I code best with a cup of milk tea.",
+      "I code best with a cup of tea.",
+      "Sometimes I name variables after my favorite snacks 🍪.",
+      "My best ideas usually come when I’m not at my desk.",
       "Debugging is my favorite kind of puzzle.",
       "I aim to make tech feel useful and human."
     ],
-    image: "/images/an2.png",
+    image: "/images/projects/fun2.png",
     link: "#",
     tags: ["Fun", "Personal"],
     year: "2024",

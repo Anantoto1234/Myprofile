@@ -37,24 +37,23 @@ export default function AboutMeComponent() {
                 transition={transition}
             >
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 font-[Eczar]">
-                    Một chút về tôi
+                    A Bit About Me
                 </h2>
                 <div className="font-[Work_Sans] text-base sm:text-lg md:text-xl space-y-4">
                     <p>
-                        Tôi là Tố An, hiện đang là sinh viên tại Việt Nam. Tôi đang theo học
-                        chuyên ngành thiết kế giao diện người dùng và phát triển web.
+                        I’m Tố An, a third-year Software Engineering student at the Vietnam–Korea University of Information and Communication Technology (VKU).
                     </p>
                     <p>
-                        Tôi yêu thích việc sáng tạo và phát triển các sản phẩm web, đặc biệt
-                        là thiết kế giao diện người dùng và tối ưu hóa trải nghiệm người
-                        dùng. Mặc dù tôi còn là sinh viên, nhưng tôi đã thực hiện nhiều dự
-                        án cá nhân và tham gia các khóa học thiết kế.
+                        I'm passionate about web development, especially user interface (UI) design and enhancing user experience (UX). Despite still being a student, I’ve worked on several personal projects and continuously improve my skills through specialized courses.
                     </p>
                     <p>
-                        Ngoài công việc học tập và thiết kế, tôi còn thích đọc sách, viết
-                        lách và khám phá những sở thích mới.
+                        Currently, I’m also studying to obtain the TOEIC certification to strengthen my English communication skills for future career opportunities.
+                    </p>
+                    <p>
+                        Outside of academics, I enjoy writing, reading, and exploring new creative ideas to grow both personally and professionally.
                     </p>
                 </div>
+
                 <Link href="/contact" aria-label="Liên hệ với tôi">
                     <motion.button
                         role="button"
@@ -76,13 +75,18 @@ export default function AboutMeComponent() {
                                     transition: { duration: 0.3, ease: 'easeOut' },
                                 }
                         }
-                        whileTap={!reduceMotion ? { scale: 0.95, transition: { duration: 0.1 } } : {}}
+                        whileTap={
+                            reduceMotion
+                                ? {}
+                                : { scale: 0.95, transition: { duration: 0.1 } }
+                        }
                     >
-                        Liên hệ với tôi
+                        Connect with me
                     </motion.button>
                 </Link>
             </motion.div>
-            {/* Image section */}
+
+            {/* Image content */}
             <motion.div
                 className="relative w-full xs:w-4/5 sm:w-2/3 md:w-1/2 lg:w-[400px] xl:w-[400px] h-[400px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[600px] order-1 lg:order-2"
                 style={{ willChange: 'opacity, transform' }}
@@ -101,5 +105,5 @@ export default function AboutMeComponent() {
                 />
             </motion.div>
         </div>
-    );
+    )
 }

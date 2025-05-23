@@ -15,9 +15,9 @@ export default function SkillSlider() {
             className="flex flex-col items-center p-6 w-full"
             style={{ backgroundColor: 'var(--background-2)', color: 'var(--foreground-2)' }}
         >
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">Kỹ năng của tôi</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">My Skill</h2>
             <p className="mb-6 text-center max-w-2xl text-muted-foreground">
-                Một cái nhìn về những kỹ năng mà tôi sở hữu và ứng dụng trong công việc.
+                A look at the skills I possess and apply in my work.
             </p>
 
             <div className="flex items-center w-full max-w-3xl mx-auto relative">
