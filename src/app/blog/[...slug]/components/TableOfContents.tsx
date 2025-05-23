@@ -11,7 +11,7 @@ function removeVietnameseTones(str: string) {
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         .replace(/đ/g, "d")
-        .replace(/Đ/g, "D")
+        .replace(/Đ/g, "D");
 }
 
 function slugify(text: string) {
@@ -20,7 +20,7 @@ function slugify(text: string) {
         .toLowerCase()
         .trim()
         .replace(/\s+/g, "-")
-        .replace(/[^\w-]/g, "")
+        .replace(/[^\w-]/g, "");
 }
 
 export default function TableOfContents({ contentMarkdown }: { contentMarkdown: string }) {

@@ -13,5 +13,5 @@ export function getPostBySlug(slug: string) {
 }
 
 export function getPostSlugs() {
-    return fs.readdirSync(postsDirectory).map((file) => file.replace(/\.md$/, ""))
+    return fs.readdirSync(postsDirectory).map((file) => file.replace(/\.md$/, ""));
 }

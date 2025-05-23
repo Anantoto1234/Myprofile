@@ -83,21 +83,18 @@ export default function Navbar() {
                             animate="visible"
                             variants={desktopItemVariants}
                         >
-                            <Link href={href} passHref legacyBehavior>
-                                <a className="text-base text-[var(--btn-text)] transition-colors duration-300">
-                                    {label}
-                                    <span className="block h-0.5 bg-gray-500 max-w-0 group-hover:max-w-full transition-all duration-300 ease-in-out"></span>
-                                </a>
+                            <Link href={href} className="text-base text-[var(--btn-text)] transition-colors duration-300">
+                                {label}
+                                <span className="block h-0.5 bg-gray-500 max-w-0 group-hover:max-w-full transition-all duration-300 ease-in-out"></span>
+      
                             </Link>
                         </motion.li>
                     ))}
                 </ul>
                 <div className="flex items-center gap-4">
                     <ThemeToggle />
-                    <Link href="/" passHref legacyBehavior>
-                        <a className="font-bold text-lg" style={{ color: 'var(--btn-text)' }}>
-                            Tố An 
-                        </a>
+                    <Link href="/" className="font-bold text-lg" style={{ color: 'var(--btn-text)' }}>
+                        Tố An 
                     </Link>
                 </div>
 
@@ -128,13 +125,11 @@ export default function Navbar() {
                         <motion.ul className="flex flex-col space-y-4 py-4 font-semibold rounded-lg">
                             {navItems.map(({ href, label }) => (
                                 <motion.li key={href} variants={mobileItemVariants}>
-                                    <Link href={href} passHref legacyBehavior>
-                                        <a
-                                            className="block w-full text-left text-[var(--btn-text)] hover:text-teal-600 dark:hover:text-teal-400 transition-colors duration-200"
-                                            onClick={() => setIsOpen(false)}
-                                        >
+                                    <Link href={href} className="block w-full text-left text-[var(--btn-text)] hover:text-teal-600 dark:hover:text-teal-400 transition-colors duration-200"
+                                            onClick={() => setIsOpen(false)}>
+                                        
                                             {label}
-                                        </a>
+                                       
                                     </Link>
                                 </motion.li>
                             ))}

@@ -35,7 +35,6 @@ export default function BlogPageClient({ metadata, contentMarkdown, slug }: Prop
     return (
         <>
             <MetaData metadata={metadata} url={url} />
-
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col lg:flex-row gap-8">
                 <article className="prose prose-lg max-w-none flex-1">
                     <ArticleHeader metadata={metadata} />
@@ -128,5 +127,5 @@ export default function BlogPageClient({ metadata, contentMarkdown, slug }: Prop
                 <TableOfContents contentMarkdown={contentMarkdown} />
             </main>
         </>
-    )
+    );
 }

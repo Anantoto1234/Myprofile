@@ -52,23 +52,23 @@ export default function ContactPage() {
         {
             icon: <Mail className="w-5 h-5 text-rose-500" />,
             title: "Email",
-            content: "hello@shambhavi.design",
-            link: "mailto:hello@shambhavi.design",
+            content: "anantoto1234@gmail.com",
+            link: "mailto:anantoto1234@gmail.com",
             linkText: "Gửi email cho tôi",
         },
         {
             icon: <Phone className="w-5 h-5 text-rose-500" />,
             title: "Điện thoại",
-            content: "+84 123 456 789",
-            link: "tel:+84123456789",
+            content: "+84 379373619",
+            link: "tel:+84379373619",
             linkText: "Gọi cho tôi",
         },
         {
             icon: <MapPin className="w-5 h-5 text-rose-500" />,
             title: "Địa chỉ",
-            content: "Hà Nội, Việt Nam",
+            content: "Đà Nẵng, Việt Nam",
             link: "",
-            linkText: "Làm việc từ xa",
+            linkText: "Đang sống và học tập tại đây",
         },
     ]
 
@@ -129,10 +129,10 @@ export default function ContactPage() {
                                 <div>
                                     <h4 className="font-medium ">Email</h4>
                                     <a
-                                        href="mailto:hello@shambhavi.design"
+                                        href="mailto:anantoto1234@gmail.com"
                                         className="hover:underline hover:text-rose-600"
                                     >
-                                        hello@shambhavi.design
+                                        anantoto1234@gmail.com
                                     </a>
                                 </div>
                             </div>
@@ -144,10 +144,10 @@ export default function ContactPage() {
                                 <div>
                                     <h4 className="font-medium">Điện thoại</h4>
                                     <a
-                                        href="tel:+84123456789"
+                                        href="tel:+84379373619"
                                         className="hover:underline hover:text-rose-600"
                                     >
-                                        +84 123 456 789
+                                        +84 379373619
                                     </a>
                                 </div>
                             </div>

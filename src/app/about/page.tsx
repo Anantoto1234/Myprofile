@@ -44,7 +44,7 @@ export default function AboutPage() {
                         <div className="absolute inset-0 border-2 border-primary rounded-lg transform translate-x-4 translate-y-4" />
                         <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-lg" />
                         <Image
-                            src="/images/toan1.png"
+                            src="/images/7658.jpg"
                             alt="Tố An"
                             width={400}
                             height={400}
@@ -154,14 +154,15 @@ export default function AboutPage() {
                         <TabsContent value="backend" className="mt-6">
                             <TechGrid
                                 list={[
-                                    { name: "Java", icon: "/icons/java.png" },
+                                    { name: "Python", icon: "https://cdn.simpleicons.org/python" },
                                     { name: "Spring Framework", icon: "https://cdn.simpleicons.org/spring" },
                                     { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql" },
                                     { name: "PostgreSQL", icon: "https://cdn.simpleicons.org/postgresql" },
                                     { name: "MongoDB", icon: "https://cdn.simpleicons.org/mongodb" },
                                     { name: "Docker", icon: "https://cdn.simpleicons.org/docker" },
-                                    { name: "WSL", icon: "/icons/linux.png" },
                                     { name: "Postman", icon: "https://cdn.simpleicons.org/postman" },
+                                    { name: "Java", icon: "/images/java3.webp" },
+
                                 ]}
                             />
                         </TabsContent>

@@ -38,7 +38,6 @@ export default function BlogPage() {
                 </div>
                 <div className="absolute inset-0 bg-[url('/images/subtle-pattern.png')] opacity-10 pointer-events-none" />
             </header>
-
             {/* Blog content */}
             <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 relative">
                 {/* Posts grid */}
@@ -119,7 +118,7 @@ export default function BlogPage() {
                                         href={`/blog/${post.slug}`}
                                         className="inline-flex items-center text-rose-600 hover:text-rose-800 font-medium text-sm transition-colors duration-200 group/link"
                                         aria-label={`Đọc bài viết: ${post.title}`}
-                                    >
+                                         >
                                         <span className="relative">
                                             Đọc bài viết
                                             <span className="absolute bottom-0 left-0 w-0 h-px bg-rose-600 transition-all duration-300 group-hover/link:w-full"></span>

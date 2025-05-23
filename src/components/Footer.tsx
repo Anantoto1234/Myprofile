@@ -55,7 +55,7 @@ export default function Footer() {
                     >
                         Hãy cùng nhau làm việc và biến mọi thứ trở nên thật đáng yêu và hữu ích.
                     </h2>
-                    <Link href="/contact" legacyBehavior>
+                    <Link href="/contact"  >
                         <motion.button
                             type="button"
                             className="px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 border-2 rounded-lg md:rounded-xl text-sm sm:text-base transition"

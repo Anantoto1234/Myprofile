@@ -55,7 +55,7 @@ export default function AboutMeComponent() {
                         lách và khám phá những sở thích mới.
                     </p>
                 </div>
-                <Link href="/contact" aria-label="Liên hệ với tôi" passHref>
+                <Link href="/contact" aria-label="Liên hệ với tôi">
                     <motion.button
                         role="button"
                         className="mt-6 px-6 py-3 border-2 rounded-xl text-sm sm:text-base transition-all"
@@ -82,7 +82,6 @@ export default function AboutMeComponent() {
                     </motion.button>
                 </Link>
             </motion.div>
-
             {/* Image section */}
             <motion.div
                 className="relative w-full xs:w-4/5 sm:w-2/3 md:w-1/2 lg:w-[400px] xl:w-[400px] h-[400px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[600px] order-1 lg:order-2"
@@ -102,5 +101,5 @@ export default function AboutMeComponent() {
                 />
             </motion.div>
         </div>
-    )
+    );
 }
