@@ -7,11 +7,11 @@ import ThemeToggle from './ThemeToggle';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navItems = [
-    { href: '/', label: 'Trang chủ' },
-    { href: '/projects', label: 'Dự Án' },
-    { href: '/blog', label: 'Góc nhỏ' },
-    { href: '/about', label: 'Về tôi' },
-    { href: '/contact', label: 'Liên Hệ' },
+    { href: '/', label: 'Who am i?' },
+    { href: '/projects', label: 'Projects' },
+    { href: '/blog', label: 'Blog' },
+    { href: '/about', label: 'About' },
+    { href: '/contact', label: 'Contact' },
 ];
 
 const desktopItemVariants = {

@@ -41,7 +41,7 @@ export const allProjects: Project[] = [
     image: "/images/projects/galio.png",
     technologies: ["HTML", "CSS", "JavaScript", "Java", "Spring Boot", "MySQL"],
     liveUrl: "https://sell-galio.vercel.app/",
-    githubUrl: "https://github.com/Anantoto1234/SellGaliot",
+    githubUrl: "https://github.com/Anantoto1234/SellGalio",
     category: "fullstack",
     showGithub: true,
 },
@@ -65,12 +65,12 @@ export const allProjects: Project[] = [
     image: "/images/projects/lms.png",
     technologies: ["Laravel", "PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"],
     liveUrl: "https://docs.google.com/document/d/18wNcdI1NoOdZ7vL8Yna4RXltX483Hodq/edit?usp=drive_link&ouid=116063730547285835336&rtpof=true&sd=true",
-    githubUrl: "https://github.com/Anantoto1234/lmsVKU",
+    githubUrl: "https://github.com/NangNe/lms",
     category: "fullstack",
 },
 
     {
-    title: "ViT5-NSGA Scheduler VKU",
+    title: "ViT5-NSGA Scheduler VKU (FE)",
     slug: "vit5-nsga-scheduler",
     description:
         "A cross-platform scheduling assistant built with React Native and Expo, designed to visualize and interact with optimized timetables generated using ViT5 NLP and the NSGA-II algorithm. The app supports user login, timetable preferences, and real-time data syncing via Axios. Tailwind CSS ensures a clean UI, while Redux manages app-wide state efficiently.",
@@ -81,7 +81,7 @@ export const allProjects: Project[] = [
     category: "frontend",
 },
  {
-    title: "ViT5-NSGA Scheduler VKU",
+    title: "ViT5-NSGA Scheduler VKU (BE)",
     slug: "vit5-nsga-scheduler",
     description:
          "The backend service for the ViT5-NSGA Scheduler system, responsible for processing timetable optimization using the ViT5 language model and NSGA-II algorithm. Built with Python and FastAPI, it exposes RESTful APIs for schedule generation, constraint handling, and integration with n8n workflows for automation. MongoDB stores input/output data, while the system ensures scalability and responsiveness for multi-user environments.",

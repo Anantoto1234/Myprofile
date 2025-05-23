@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 export default function HeroSection() {
-    const fullText = 'Xin chào, mình là';
+    const fullText = 'Hi, I\'m Lưu Thị Tố An';
     const [typedText, setTypedText] = useState('');
     const [isMobile, setIsMobile] = useState(false);
 
@@ -100,7 +100,7 @@ export default function HeroSection() {
                             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
                             style={{ fontFamily: 'Eczar, sans-serif', color: 'var(--text-card)' }}
                         >
-                            <span className="text-#ffeed9">Lưu Thị Tố An</span><br />
+                            <span className="text-#ffeed9">You can call me "Anna"</span><br />
                             <span className="bg-gradient-to-r from-teal-500 to-emerald-400 bg-clip-text text-transparent">
                                 {/* mô tả */}
                             </span>
@@ -117,7 +117,10 @@ export default function HeroSection() {
                                 color: 'var(--text-card)',
                             }}
                         >
-                            🌟 Chào bạn! Mình là Tố An – đam mê sáng tạo và luôn tìm cách cải thiện trải nghiệm người dùng. Mình tin rằng thiết kế không chỉ phải đẹp mà còn phải dễ sử dụng. Cùng khám phá những điều mới mẻ nhé!
+                            🌟 I’m a third-year Software Engineering student at VKU with a GPA of 3.44/4.0. While I’m not an expert yet, I’ve gained hands-on experience through academic fullstack projects that helped me improve my programming and system thinking skills.
+                            <br></br>
+
+I’m eager to keep learning and currently looking for an internship in Business Analysis, Software Testing, or Frontend Development to grow through real-world experience.
                         </motion.p>
 
                         <motion.div
@@ -129,7 +132,9 @@ export default function HeroSection() {
                             style={{ fontFamily: 'Eczar, sans-serif' }}
                         >
                             <Link
-                                href="/work"
+                                href="/images/Cvproflie_Luuthitoan.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="w-full sm:w-auto group inline-flex items-center justify-center px-6 py-3 text-white rounded-xl relative overflow-hidden text-base font-semibold"
                                 style={{
                                     backgroundColor: "#4e5e80",
