@@ -28,8 +28,8 @@ export default function BlogPage() {
             <header className="relative overflow-hidden py-8 sm:py-14">
                 <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                     <SectionHeading
-                        title="Góc nhỏ của An"
-                        subtitle="Khám phá những bài viết mới nhất về thiết kế và sáng tạo của mình ><"
+                        title="An's little corner"
+                        subtitle="Explore my latest articles "
                         centered
                     />
                     <div className="mt-6 flex justify-center">
@@ -114,28 +114,19 @@ export default function BlogPage() {
 
                                 {/* Read more link */}
                                 <div className="mt-auto pt-3 border-t border-gray-100">
-                                    <Link
-                                        href={`/blog/${post.slug}`}
-                                        className="inline-flex items-center text-rose-600 hover:text-rose-800 font-medium text-sm transition-colors duration-200 group/link"
-                                        aria-label={`Đọc bài viết: ${post.title}`}
-                                         >
-                                        <span className="relative">
-                                            Đọc bài viết
-                                            <span className="absolute bottom-0 left-0 w-0 h-px bg-rose-600 transition-all duration-300 group-hover/link:w-full"></span>
-                                        </span>
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="ml-2 h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-1"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                        >
-                                            <path
-                                                fillRule="evenodd"
-                                                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                                                clipRule="evenodd"
-                                            />
-                                        </svg>
-                                    </Link>
+                                    <a
+  href="/images/Poster.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center text-rose-600 hover:text-rose-800 font-medium text-sm transition-colors duration-200 group"
+  aria-label={`Xem CV: ${post.title}`}
+>
+  <span className="relative">
+    Đọc bài viết
+    <span className="absolute bottom-0 left-0 w-0 h-px bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+  </span>
+</a>
+
                                 </div>
                             </div>
                         </AnimatedCard>

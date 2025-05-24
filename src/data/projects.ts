@@ -33,18 +33,19 @@ export const allProjects: Project[] = [
     githubUrl: "https://github.com/Anantoto1234/ShopGameWeb",
     category: "frontend",
 },
-    {
-    title: "Galio-Sell ",
-    slug: "galio-sell",
-    description:
-        "Galio-Sell is a fullstack e-commerce web application featuring a custom HTML/CSS/JS frontend and a powerful Java backend. The system includes product pages, blog layouts, shopping cart functionality, and account management. The backend, built with Java (Spring Boot), handles business logic, user authentication, and database operations, making this project a complete solution for online store development.",
-    image: "/images/projects/galio.png",
-    technologies: ["HTML", "CSS", "JavaScript", "Java", "Spring Boot", "MySQL"],
-    liveUrl: "https://sell-galio.vercel.app/",
-    githubUrl: "https://github.com/Anantoto1234/SellGalio",
-    category: "fullstack",
-    showGithub: true,
+{
+  title: "Tố An – Personal Portfolio",
+  slug: "to-an-portfolio",
+  description:
+    "This is the personal portfolio of Lưu Thị Tố An, a creative and passionate student focused on UI/UX design and web development. The website showcases her personality, skills, and projects with a friendly and engaging visual style. Built with modern web technologies, it features animated sections, responsive layout, and a warm storytelling approach to introduce her work and identity to potential collaborators or employers.",
+  image: "/images/thumbnail.png",
+  technologies: ["React", "Next.js", "Tailwind CSS", "GSAP", "Framer Motion"],
+  liveUrl: "https://your-portfolio-link.vercel.app/",
+  githubUrl: "https://github.com/yourusername/portfolio-project",
+  category: "frontend",
+  showGithub: true
 },
+
   {
     title: "Tic Tac Toe (Android)",
     slug: "tic-tac-toe-kotlin",
@@ -79,6 +80,18 @@ export const allProjects: Project[] = [
     liveUrl: "https://fe-f97d.vercel.app/",
     githubUrl: "https://github.com/SmartTimetable/FE",
     category: "frontend",
+},
+   {
+    title: "Galio-Sell ",
+    slug: "galio-sell",
+    description:
+        "Galio-Sell is a fullstack e-commerce web application featuring a custom HTML/CSS/JS frontend and a powerful Java backend. The system includes product pages, blog layouts, shopping cart functionality, and account management. The backend, built with Java (Spring Boot), handles business logic, user authentication, and database operations, making this project a complete solution for online store development.",
+    image: "/images/projects/galio.png",
+    technologies: ["HTML", "CSS", "JavaScript", "Java", "Spring Boot", "MySQL"],
+    liveUrl: "https://sell-galio.vercel.app/",
+    githubUrl: "https://github.com/Anantoto1234/SellGalio",
+    category: "fullstack",
+    showGithub: true,
 },
  {
     title: "ViT5-NSGA Scheduler VKU (BE)",

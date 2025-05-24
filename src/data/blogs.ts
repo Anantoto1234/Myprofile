@@ -1,20 +1,21 @@
 export const allBlogPosts = [
     {
-        slug: "tam-quan-trong-cua-thiet-ke-lay-nguoi-dung-lam-trung-tam",
-        title: "Tầm Quan Trọng Của Thiết Kế Lấy Người Dùng Làm Trung Tâm",
-        excerpt: "Khám phá lý do tại sao đặt người dùng làm trung tâm trong quá trình thiết kế sẽ tạo ra sản phẩm tốt hơn và khách hàng hài lòng hơn.",
-        date: "5 Tháng 5, 2023",
-        category: "Tư Duy Thiết Kế",
-        image: "/images/an1.png",
-        readTime: "5 phút đọc",
-    },
+  "slug": "user-centered-design-in-optimal-timetable-selection",
+  "title": "The Importance of User-Centered Design in Optimal Timetable Selection",
+  "excerpt": "This study presents a hybrid approach combining a fine-tuned ViT5 model with the NSGA-II algorithm to automate and optimize course scheduling based on natural language input. The system emphasizes personalization and multi-objective optimization to meet diverse user constraints.",
+  "date": "May 1, 20255",
+  "category": "AI & Optimization",
+  "image": "/images/projects/activity.png",
+  "readTime": "5 min read"
+},
+
     {
         slug: "tam-ly-mau-sac-trong-thiet-ke-giao-dien",
         title: "Tâm Lý Màu Sắc Trong Thiết Kế Giao Diện",
         excerpt: "Tìm hiểu cách các màu sắc khác nhau ảnh hưởng đến nhận thức của người dùng và cách sử dụng màu sắc hiệu quả trong thiết kế.",
         date: "18 Tháng 4, 2023",
         category: "Thiết Kế Giao Diện",
-        image: "/images/an1.png",
+        image: "/images/projects/schedule.png",
         readTime: "7 phút đọc",
     },
     {
