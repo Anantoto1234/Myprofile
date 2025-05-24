@@ -40,8 +40,8 @@ export const allProjects: Project[] = [
     "This is the personal portfolio of Lưu Thị Tố An, a creative and passionate student focused on UI/UX design and web development. The website showcases her personality, skills, and projects with a friendly and engaging visual style. Built with modern web technologies, it features animated sections, responsive layout, and a warm storytelling approach to introduce her work and identity to potential collaborators or employers.",
   image: "/images/thumbnail.png",
   technologies: ["React", "Next.js", "Tailwind CSS", "GSAP", "Framer Motion"],
-  liveUrl: "https://your-portfolio-link.vercel.app/",
-  githubUrl: "https://github.com/yourusername/portfolio-project",
+  liveUrl: "https://my-profile-nu-gilt.vercel.app/contact",
+  githubUrl: "https://github.com/Anantoto1234/Myprofile/tree/dev",
   category: "frontend",
   showGithub: true
 },
