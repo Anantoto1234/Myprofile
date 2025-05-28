@@ -78,7 +78,7 @@ export const allProjects: Project[] = [
     image: "/images/projects/schedule.png",
     technologies: ["React Native", "Tailwind", "TypeScript", "Axios", "Redux"],
     liveUrl: "https://fe-f97d.vercel.app/",
-    githubUrl: "https://github.com/SmartTimetable/FE",
+    githubUrl: "https://github.com/conanWinner/Schedule_Project/",
     category: "frontend",
 },
    {
@@ -101,7 +101,7 @@ export const allProjects: Project[] = [
     image: "/images/projects/schedule1.png",
     technologies:  ["Python", "FastAPI", "ViT5", "NSGA-II", "MongoDB", "n8n"],
     liveUrl: "https://fe-f97d.vercel.app/",
-    githubUrl: "https://github.com/SmartTimetable/BE",
+    githubUrl: "https://github.com/conanWinner/Schedule_Project/",
     category: "backend",
 },
   
