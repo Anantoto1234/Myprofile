@@ -25,7 +25,7 @@ export default function AboutPage() {
                     About Me
                 </h1>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    3rd-year Software Engineering Student – VKU University
+                     Software Engineering Student – VKU University
                 </p>
             </motion.section>
 
@@ -61,7 +61,7 @@ export default function AboutPage() {
                     </h2>
                     <div className="space-y-4 mb-8 text-muted-foreground">
                         <p>
-                            I'm currently a 3rd-year Software Engineering student at VKU. With a strong desire to learn and grow, I'm preparing myself for internships and future professional environments.
+                            I'm currently a Software Engineering student at VKU. With a strong desire to learn and grow, I'm preparing myself for internships and future professional environments.
                         </p>
                         <p>
                             I enjoy building web and application projects. I focus on clean UI, good user experience, and optimizing performance.

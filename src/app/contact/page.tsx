@@ -115,7 +115,7 @@ export default function ContactPage() {
                     <div className="space-y-6">
                         <h2 className="text-3xl font-medium">Direct Contact Information</h2>
                         <p>
-                            I'm currently a third-year Software Engineering student looking for internship opportunities to gain real-world experience, improve my skills, and contribute to practical projects.
+                            I'm currently a Software Engineering student looking for internship opportunities to gain real-world experience, improve my skills, and contribute to practical projects.
                             If you have a suitable position or would like to connect and discuss further, I'd love to hear from you.
                         </p>
 

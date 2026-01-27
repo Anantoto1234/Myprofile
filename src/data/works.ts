@@ -1,3 +1,4 @@
+import Link from "next/link"
 export const works = [
   {
     title: "🎯 Internship Interests",
@@ -19,12 +20,12 @@ export const works = [
     title: "🛠 Skills & Tools",
     slug: "skills-and-tools",
     description: [
-      "Languages & Frameworks: HTML, CSS, JavaScript, PHP, Laravel, ReactJS, Python.",
-      "Toolset: Git, Postman, Figma, Trello, VSCode.",
-      "Research: ViT5 NLP, NSGA-II, LaTeX, and academic writing."
+      "Languages & Frameworks: Python, HTML, CSS, JavaScript, PHP, Laravel, ReactJS.",
+      "Toolset: N8N, Git, Postman, Figma, Trello, VSCode.",
+      "Research: VGG, AlexNet, k-NN, T5 (NLP), Vision Transformer (ViT), CNNs, Transfer Learning, Text Classification, Sentiment Analysis, NSGA-II, LaTeX, and academic writing."
     ],
-    image: "/images/projects/backend.png",
-    link: "#",
+    image: "/images/ccgg.png",
+    link: "/about",
     tags: ["Skills", "Tools", "Tech Stack"],
     year: "2024",
     caseStudy: "Skills gained from fullstack development, team collaboration, and research.",

@@ -164,12 +164,13 @@ const RecentWork = () => {
                     </div>
                     <div className="mt-auto">
                       <Link
-                        href={`/blog/${work.slug}`}
+                        href="/about"
                         className="text-sm md:text-base font-medium transition-transform duration-300 ease-out group-hover:translate-x-1 inline-block"
                         style={{ color: 'var(--accent)' }}
                       >
                         Xem chi tiết →
                       </Link>
+                      
                     </div>
                   </div>
 

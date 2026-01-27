@@ -117,8 +117,9 @@ export default function HeroSection() {
                                 color: 'var(--text-card)',
                             }}
                         >
-                            🌟 I’m a third-year Software Engineering student at VKU with a GPA of 3.44/4.0. While I’m not an expert yet, I’ve gained hands-on experience through academic fullstack projects that helped me improve my programming and system thinking skills.
+                            🌟 I’m a Software Engineering student at VKU with a GPA of 3.44/4.0. . I’ve gained hands-on experience through academic full-stack projects, helping me improve my programming and system thinking skills.
                             <br></br>
+                            I’m interested in research-oriented work, particularly in Sentiment Analysis and Deep Learning, and I’m building a foundational background in data analysis through academic study and Google-certified coursework.
 
 I’m eager to keep learning and currently looking for an internship in Business Analysis, Software Testing, or Frontend Development to grow through real-world experience.
                         </motion.p>

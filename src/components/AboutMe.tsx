@@ -41,7 +41,7 @@ export default function AboutMeComponent() {
                 </h2>
                 <div className="font-[Work_Sans] text-base sm:text-lg md:text-xl space-y-4">
                     <p>
-                        I’m Tố An, a third-year Software Engineering student at the Vietnam–Korea University of Information and Communication Technology (VKU).
+                        I’m Tố An, a final-year Software Engineering student at the Vietnam–Korea University of Information and Communication Technology (VKU).
                     </p>
                     <p>
                         I'm passionate about web development, especially user interface (UI) design and enhancing user experience (UX). Despite still being a student, I’ve worked on several personal projects and continuously improve my skills through specialized courses.
